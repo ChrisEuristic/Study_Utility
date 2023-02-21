@@ -1,9 +1,10 @@
 ```javascript
 
-const express = require("express");
-const app = express();
-const port = '8080';
+const express = require("express"); // express 모듈 로드
+const app = express(); // express 서버 객체 생성
+const port = '8080'; // 포트번호
 
+/* post response 처리 필수 함수 */
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
